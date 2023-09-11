@@ -1,0 +1,393 @@
+@use '../../lib/service.scss' as s;
+
+.header {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+
+background-color: #e8f0ea;
+
+&__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+}
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    background-position: center;
+    padding: 24px;
+    padding-top: 36px;
+    width: 400px;
+    height: 200px;
+}
+
+.block  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 20px;
+
+    font-family: bold;
+    color: rgb(9, 9, 9);
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        
+     
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    &__reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+}
+
+.text {
+    text-decoration: none;
+}
+.form {
+    padding: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    &__content {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        background-size: cover;
+        width: 100%;
+        
+
+    }
+}
+
+.form-img {
+    background-image: url('/img/заставка 1.png');
+    background-color: #000;
+}
+
+.form-big {
+    max-height: 700px;
+    height: 100vh;
+   padding: 80px;
+    background-size: cover;
+
+}
+
+.form__title {
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+    font-family: bold;
+    padding: 24px;
+}
+
+.form__description {
+ font-size: 24px;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Arial', serif;
+}
+
+em {
+    font-style: italic;
+    color: white;
+}
+
+// .img {
+//     display: flex;
+//     width: 100%;
+//     max-height: 900px;
+//     justify-content: stretch;
+//     background-position: center center;
+//     background-size: cover;
+//     background-color: F4EDE4;
+//     background-image: url(заставка.png);
+
+//     display: flex;
+
+// padding: 80px 0px;
+// flex-direction: column;
+// align-items: center;
+// align-self: stretch;
+// }
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #e8f0ea;
+
+    &__text {
+        padding: 36px;
+    }
+    
+    &__title {
+        font-size: 28px;
+        font-weight: 400;
+        color: black;
+        font-family: bold;
+        padding: 24px;
+    }
+    
+}
+
+.service__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    gap: 24px;
+    padding: 24px;
+}
+
+.service__title__eye {
+    display: flex;
+    justify-content: center;
+  
+    height: 100vh;
+    background-size: cover;
+    background-image: url('/img/раздел ресницы.png');
+    background-color: #000;
+
+}
+
+.service__eye {
+    font-size: 36px;
+    padding-top: 25px;
+    color: white;
+}
+
+.service__title__brows {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/раздел брови.png');
+    background-color: #000;
+}
+
+.service__brows {
+    font-size: 36px;
+    padding-top: 25px;
+    color: white;
+}
+ element.style {
+    transform: translateY(600px);
+ }
+
+ .system {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8f0ea;
+
+   
+
+    &__title {
+        font-family: "Cormorant";
+        font-size: 36px;
+        padding: 48px;
+        color: rgb(47, 46, 46);
+    }
+ }
+
+ .sale {
+    display: grid;
+  
+    align-items: stretch;
+
+  
+ }
+
+ .sale__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    align-items: center;
+   width: 100%;
+    gap: 54px;
+ }
+
+ .sale__item {
+    display: grid;
+    gap: 48px
+ }
+
+ .sale__list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 18px;
+ }
+
+ .list__title {
+    display: flex;
+   align-items: center;
+
+    font-size: 36px;
+ }
+
+ .list__text {
+    font-size: 16px;
+ }
+
+ .info {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8f0ea;
+    padding: 20px;
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      
+        padding: 24px;
+        gap: 48px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        gap: 36px;
+    }
+ }
+
+ .supervisor {
+    display: flex;
+    background-color: #e8f0ea;
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 24px;
+    }
+
+    &__title {
+        font-size: 80px;
+        width: 550px;
+    }
+ }
+
+ .pic {
+    display: block;
+    width: 100%;
+    width: 550px;
+    height: 730px;
+ }
+
+
+ .contact {
+    display: flex;
+    background-color: #e8f0ea;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 24px;
+    }
+
+    &___card {
+        font-size: 80px;
+        width: 550px;
+    }
+ }
+
+ .footer {
+    display: flex;
+    background-color: rgb(190, 208, 224);
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 48px;
+        padding: 24px;
+    }
+
+    &__field {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    padding: 24px;
+    padding-top: 36px;
+    width: 400px;
+    height: 200px;
+ }
+
+ &__info {
+    display: flex;
+    justify-content: space-between;
+    background-position: center;
+    padding: 24px;
+    padding-top: 36px;
+    width: 100%;
+    height: 200px;
+ }
+}
+
+.img__logo {
+    max-width: 200px;
+    width: 200px;
+}
+
+.footer__card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+
+}
+
+
+
+
+ .icon {
+    width: 50px;
+ }
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+

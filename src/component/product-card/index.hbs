@@ -1,0 +1,35 @@
+{{#with data.products}}
+  {{#if isEmpty}}
+    <mark>Список пустий</mark>
+  {{else}}
+    {{#each list}}
+      <div class='product'>
+        <div class='product__card'>
+          <div class='product__content'>
+            <h2 class='product__title'>{{name}}</h2>
+            <p
+              class='product__description'
+            >{{description}}</p>
+            <p class='product__id'>ID: {{id}}</p>
+
+          </div>
+          <div class='product__action'>
+            <div class='product__field'>
+              <div class='product__price'>{{price}}
+                $</div>
+            </div>
+
+            <div class='product__field'>
+              <button><a
+                  href='/product-edit?id={{id}}'
+                  class='product__edit'
+                >Редагувати</a></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
+  {{/if}}
+{{/with}}

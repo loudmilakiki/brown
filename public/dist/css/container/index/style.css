@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #e8f0ea;
+  background-color: #edcfb4;
 }
 .header__content {
   display: grid;
@@ -326,6 +326,7 @@ element.style {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #edcfb4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+@use '../../lib/service.scss' as s;
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    padding: 24px;
+    gap: 12px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+   
+}
+
+
+

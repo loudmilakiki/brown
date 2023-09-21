@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 24px;
+  gap: 12px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -15,10 +15,20 @@ width: 100%;
     align-items: center;
     gap: 20px;
     width: 100%;
-    
-    
 
 }
+
+&__link {
+    display: flex;
+    
+    gap: 18px;
+     justify-content: center;
+ }
+
+ &__description {
+    display: flex;
+    justify-content: center;
+ }
 
 }
 .header__logo {
@@ -164,6 +174,10 @@ em {
         font-family: bold;
         padding: 24px;
     }
+
+    &__eye {
+        height: 55px;
+    }
     
 }
 
@@ -178,7 +192,7 @@ em {
     padding: 24px;
 }
 
-.service__title__eye {
+.service__titles__eye {
     display: flex;
     justify-content: center;
   
@@ -384,13 +398,6 @@ em {
 
 }
 
-.header__link {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
- }
-
-
  .icon {
     width: 50px;
  }
@@ -401,7 +408,10 @@ em {
  }
 
  .image__link {
+    display: flex;
+
     padding: 32px;
+   justify-content: center;
    
  }
 
@@ -409,4 +419,111 @@ em {
 body {
     display: flex;
     flex-direction: column;
+}
+
+
+@media all and (width <= 1024px) {
+    .header {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+}
+
+@media all and (width <= 1024px) {
+    main {
+       display: block;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__title {
+          display: flex;
+          width: 800px;
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+        }
+
+        &__title__eye {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__eye {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+    }
+}
+
+@media all and (width <= 760px) {
+    .header {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+}
+
+@media all and (width <= 760px) {
+    main {
+        display: block;
+        
+    }
+
+ .service__title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 600px;
+        }
+}
+
+@media all and (width <= 1024px) {
+    .system {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__title {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (width <= 1024px) {
+    .supervisor {
+        display: block;
+
+        &__card {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &__title {
+            width: 100%;
+        }
+
+        &__pic {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (width <= 1024px) {
+   
+
+        .info__block {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
 }

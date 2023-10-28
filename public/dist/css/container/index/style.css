@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -22,7 +27,6 @@
   display: flex;
   justify-content: center;
 }
-
 .header__logo {
   display: flex;
   justify-content: space-between;
@@ -34,6 +38,20 @@
   background-image: url("/img/листья 1 (2).png");
 }
 
+.icon {
+  width: 50px;
+}
+
+.icon__link {
+  width: 40px;
+}
+
+.image__link {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+}
+
 .block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -41,6 +59,7 @@
   width: 100%;
   gap: 40px;
   padding: 20px;
+  background-color: #FADEDE;
   font-family: bold;
   color: rgb(9, 9, 9);
 }
@@ -86,9 +105,20 @@
   background-size: cover;
   width: 100%;
 }
+.form__title {
+  font-size: 56px;
+  font-weight: 600;
+  color: white;
+  font-family: bold;
+  padding: 24px;
+}
+.form__description {
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif, "Arial", serif;
+}
 
 .form-img {
-  background-image: url("/img/IMG_6813 1 (2).png");
+  background-image: url("/img/screen.png");
   background-color: #000;
 }
 
@@ -97,19 +127,6 @@
   height: 100vh;
   padding: 80px;
   background-size: cover;
-}
-
-.form__title {
-  font-size: 56px;
-  font-weight: 600;
-  color: white;
-  font-family: bold;
-  padding: 24px;
-}
-
-.form__description {
-  font-size: 24px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif, "Arial", serif;
 }
 
 em {
@@ -133,10 +150,6 @@ em {
   font-family: bold;
   padding: 24px;
 }
-.service__eye {
-  height: 55px;
-}
-
 .service__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -147,7 +160,6 @@ em {
   gap: 24px;
   padding: 24px;
 }
-
 .service__titles__eye {
   display: flex;
   justify-content: center;
@@ -156,13 +168,13 @@ em {
   background-image: url("/img/раздел ресницы.png");
   background-color: #000;
 }
-
 .service__eye {
   font-size: 36px;
   padding-top: 25px;
   color: white;
+  height: 50px;
+  text-decoration: none;
 }
-
 .service__title__brows {
   display: flex;
   justify-content: center;
@@ -171,11 +183,12 @@ em {
   background-image: url("/img/раздел брови.png");
   background-color: #000;
 }
-
 .service__brows {
   font-size: 36px;
   padding-top: 25px;
   color: white;
+  text-decoration: none;
+  height: 50px;
 }
 
 element.style {
@@ -199,7 +212,6 @@ element.style {
   display: grid;
   align-items: stretch;
 }
-
 .sale__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -207,12 +219,10 @@ element.style {
   width: 100%;
   gap: 54px;
 }
-
 .sale__item {
   display: grid;
   gap: 48px;
 }
-
 .sale__list__content {
   display: flex;
   flex-direction: column;
@@ -287,11 +297,15 @@ element.style {
 .contact___card {
   font-size: 80px;
   width: 550px;
+  font-size: 24px;
+}
+.contact__map {
+  font-size: 24px;
 }
 
 .footer {
   display: flex;
-  background-color: rgb(190, 208, 224);
+  background-color: #FADEDE;
 }
 .footer__content {
   display: grid;
@@ -330,25 +344,6 @@ element.style {
   align-items: center;
   width: 100%;
   gap: 16px;
-}
-
-.icon {
-  width: 50px;
-}
-
-.icon__link {
-  width: 40px;
-}
-
-.image__link {
-  display: flex;
-  padding: 32px;
-  justify-content: center;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 @media all and (width <= 1024px) {

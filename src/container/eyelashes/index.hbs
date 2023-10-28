@@ -1,13 +1,49 @@
-<main class='main'>
-  <section class='section'>
-    <form action='' class='form'>
-      <div class='block'>
-        <h1 class='block__title'>Наращивание ресниц</h1>
-      </div>
+<body>
+  {{> header}}
 
-      <div class='block__content'>
-        <img src='/img/уголки.png' class='img' />
+  <main class="main">
+    <section class="section">
+      <div class="build">
+
+        <div class="build__content">
+          <a href="/build-eyelashes" class="link" style="transform: translateY(600px)" target="_blank">
+            <button class="build__button">
+              <div class="build__button-text1">Наращивание <img src="/img/transition.png" width="20px" height="32px"
+                  class="img">
+              </div>
+            </button></a>
+        </div>
+
+        <div class="build__content">
+          <a href="/removal" class="link" style="transform: translateY(600px)" target="_blank">
+            <button class="build__button">
+              <div class="build__button-text2">Снятие <img src="/img/transition.png" width="20px" height="32px"
+                  class="img">
+              </div>
+            </button></a>
+        </div>
+
+        <div class="build__content">
+          <a href="/coloring" class="link" style="transform: translateY(600px)" target="_blank">
+            <button class="build__button">
+              <div class="build__button-text3">Окрашивание <img src="/img/transition.png" width="20px" height="32px"
+                  class="img">
+              </div>
+            </button></a>
+        </div>
+
+        <div class="build__content">
+          <a href="/spa" class="link" style="transform: translateY(600px)" target="_blank">
+            <button class="build__button">
+              <div class="build__button-text4">Спа для ресниц <img src="/img/transition.png" width="20px" height="32px"
+                  class="img">
+              </div>
+            </button></a>
+        </div>
+
       </div>
-    </form>
-  </section>
-</main>
+      </div>
+    </section>
+  </main>
+  {{>footer}}
+</body>

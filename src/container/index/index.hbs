@@ -1,51 +1,21 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
-
 <body>
-  <header>
-    <div class='header'>
-      <div class='header__content'>
+  {{> header}}
 
-        <div class='header__link'>
-          <a href='https://www.instagram.com/lbm_studio_simf/' class="image__link" target="_blank">
-            <img src='/fav/image 12.png' class="icon__link" />
-          </a>
 
-          <a href='https://wa.me/79787097135/' text='Здравствуйте' class="image__link" target="_blank">
-            <img src='/fav/image 11.png' class="icon__link" />
-          </a>
-        </div>
+  <div class='block'>
 
-        <div>
-          <img src='/img/ЗОЛОТО.png' class='header__logo' />
-        </div>
+    <h2 class='block__price'><a href='#price' style='color: rgb(47, 46, 46)' class="text">Цены</a></h2>
 
-        <div>
-          <p class='header__description'>адрес</p>
-          <p class='header__description'>телефон</p>
-        </div>
-      </div>
+    <h2 class='block__info'><a href="#info" style="color: rgb(47, 46, 46)" class="text">О нас</a></h2>
 
-      <div class='block'>
+    <h2 class='block__reviews'><a href="#reviews" style="color: rgb(47, 46, 46)" class="text">Отзывы</a></h2>
 
-        <h2 class='block__price'><a href='#price' style='color: rgb(47, 46, 46)' class="text">Цены</a></h2>
+    <h2 class='block__contact'><a href="#contact" style="color: rgb(47, 46, 46)" class="text">Контакты</a></h2>
 
-        <h2 class='block__info'><a href="#info" style="color: rgb(47, 46, 46)" class="text">О нас</a></h2>
-
-        <h2 class='block__reviews'><a href="#reviews" style="color: rgb(47, 46, 46)" class="text">Отзывы</a></h2>
-
-        <h2 class='block__contact'><a href="#contact" style="color: rgb(47, 46, 46)" class="text">Контакты</a></h2>
-
-      </div>
-    </div>
-
-  </header>
+  </div>
 
   <main>
     <section class='form form-big form-img'>
-
       <form action='' class='method'>
         <div class='form__content'>
           <h1 class='form__title'><a href=" "></a>СТУДИЯ НАРАЩИВАНИЯ
@@ -55,14 +25,11 @@
             <br />
             ОФОРМЛЕНИЯ БРОВЕЙ
           </h1>
-
-
           <div class='form__description'>
             <em>С ПРЕМИАЛЬНЫМ СЕРВИСОМ</em>
           </div>
         </div>
       </form>
-
     </section>
 
     <section class='service'>
@@ -72,11 +39,11 @@
       </div>
       <div class='service__content'>
         <div class='service__titles__eye'>
-          <h2 class='service__eye' style="transform: translateY(600px)">РЕСНИЦЫ</h2>
+          <a href="/eyelashes" class='service__eye' style="transform: translateY(600px)" target="_blank">РЕСНИЦЫ</a>
         </div>
 
         <div class='service__title__brows '>
-          <h2 class='service__brows' style="transform: translateY(600px)">БРОВИ</h2>
+          <a href="/brows" class='service__brows' style="transform: translateY(600px)" target="_blank">БРОВИ</a>
         </div>
       </div>
       </div>
@@ -86,8 +53,6 @@
       <spam class="system__title">
         СИСТЕМА ЛОЯЛЬНОСТИ
       </spam>
-
-
       <div class="sale">
         <div class="sale__list">
           <div class="sale__list__content">
@@ -155,7 +120,7 @@
       <div class="supervisor__card">
         <div class="supervisor__title ">text</div>
         <div class="supervisor__pic">
-          <img src="/img/image-07-09-23-05-10.png" class="pic">
+          <img src="/img/supervisor.png" class="pic">
         </div>
       </div>
     </section>
@@ -173,32 +138,6 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__content">
+  {{> footer}}
 
-      <div class="footer__field">
-        <img src="/img/ЗОЛОТО.png" class="img__logo">
-      </div>
-      <div class="footer__info">
-        <div class="footer__card">
-          <h2 class='block__price'><a href='#price' style='color: rgb(47, 46, 46)' class="text">Цены</a></h2>
-
-          <h2 class='block__info'><a href="#info" style="color: rgb(47, 46, 46)" class="text">О нас</a></h2>
-
-          <h2 class='block__reviews'><a href="#reviews" style="color: rgb(47, 46, 46)" class="text">Отзывы</a></h2>
-
-          <h2 class='block__contact'><a href="#contact" style="color: rgb(47, 46, 46)" class="text">Контакты</a></h2>
-
-        </div>
-      </div>
-    </div>
-
-    </div>
-  </footer>
 </body>
-{{!
-Цей код містить лише те, що буде виводитись в
-
-<body>
-  Адже наш layout/default.hbs має вже структуру HTML
-  }}

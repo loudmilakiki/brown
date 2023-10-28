@@ -342,7 +342,7 @@ em {
 
  .contact {
     display: flex;
-    background-color: #FADEDE;
+    background-color:s.color('background');
 
     &__content {
         display: grid;

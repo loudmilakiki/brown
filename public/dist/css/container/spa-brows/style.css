@@ -51,53 +51,12 @@ body {
   justify-content: center;
 }
 
-.block {
+main {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  align-items: center;
   background-color: #FADEDE;
-}
-.block__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 36px;
-}
-.block__subtitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 24px;
-  padding: 40px;
-}
-.block__content {
-  display: grid;
-  grid-template-columns: 350px 1fr;
-  padding: 20px;
-  gap: 24px;
-}
-.block__pic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.block__text {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  line-height: 1.5;
-}
-.block__subpic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 24px;
-  padding: 40px;
-}
-
-.img {
-  width: 350px;
-  height: 450px;
 }
 
 .button {

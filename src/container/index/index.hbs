@@ -8,21 +8,14 @@
 
     <h2 class='block__info'><a href="#info" style="color: rgb(47, 46, 46)" class="text">О нас</a></h2>
 
-    <h2 class='block__reviews'><a href="#reviews" style="color: rgb(47, 46, 46)" class="text">Отзывы</a></h2>
+    <h2 class='link'><a href="/reviews" style="color: rgb(47, 46, 46)" class="text" target="_blank">Отзывы</a></h2>
 
     <h2 class='block__contact'><a href="#contact" style="color: rgb(47, 46, 46)" class="text">Контакты</a></h2>
 
   </div>
 
   <main>
-    <div>
-      <a class="button bottom right" href="http://dikidi.net/754169" target="_blank">
-        <div class="buttonBackground"></div>
-        <div class="buttonWave" style="border-color: #C28B6F"></div>
-
-        <div class="buttonText">Онлайн запись</div>
-      </a>
-    </div>
+    {{> button}}
 
 
     <section class='form form-big form-img'>
@@ -130,13 +123,18 @@
       <div class="supervisor__card">
         <div class="supervisor__title" style="font-style: italic">
           <p class="supervisor__content">
-            Здравствуйте, меня зовут Изабелла Нажиб. Я являюсь
+            Здравствуйте, меня зовут Изабелла Нажиб.
+            <br>Я являюсь
             руководителем
             студии-школы
-            LBM. С радостью приглашаю Вас в студтию оформления вгляда. Политика моей студии нацелена только на
-            качественное предоставление услуг и премиальный сервис.Мы с большой любовью относимся к своему делу и
+            LBM.
+            <br>
+            С радостью приглашаю Вас в студтию оформления вгляда.
+            <br>Политика моей студии нацелена только на
+            качественное предоставление услуг и премиальный сервис. Мы с большой любовью относимся к своему делу и
             дорожим
-            каждым клиентом. Наша команда всегда встретит Вас с улыбкой и учтет все Ваши пожелания</p>
+            каждым клиентом. Наша команда всегда встретит Вас с улыбкой и учтет все Ваши пожелания
+          </p>
         </div>
         <div class="supervisor__pic">
           <img src="/img/supervisor.png" class="pic">

@@ -3,8 +3,6 @@ const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
 const router = express.Router()
 
-// ================================================================
-
 //=================================================================
 // router.get Створює нам один ентпоїнт
 
@@ -22,7 +20,18 @@ router.get('/', function (req, res) {
   // ↑↑ сюди вводимо JSON дані
 })
 
-// ================================================================
+//====================================
+
+router.get('/reviews', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('reviews', {
+    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
+    style: 'reviews',
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
 
 //=================================================================
 // router.get Створює нам один ентпоїнт
@@ -52,43 +61,44 @@ router.get('/build-eyelashes', function (req, res) {
   // ↑↑ сюди вводимо JSON дані
 })
 
-router.get('/coloring', function (req, res) {
+router.get('/coloring-eyelashes', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('coloring', {
+  res.render('coloring-eyelashes', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'coloring',
+    style: 'coloring-eyelashes',
   })
   // ↑↑ сюди вводимо JSON дані
 })
 
-router.get('/spa', function (req, res) {
+router.get('/spa-eyelashes', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('spa', {
+  res.render('spa-eyelashes', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'spa',
+    style: 'spa-eyelashes',
   })
   // ↑↑ сюди вводимо JSON дані
 })
 
-router.get('/removal', function (req, res) {
+router.get('/removal-eyelashes', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('removal', {
+  res.render('removal-eyelashes', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'removal',
+    style: 'removal-eyelashes',
   })
   // ↑↑ сюди вводимо JSON дані
 })
+//==================================================
 
-router.post('/build-eyelashes', function (req, res) {})
+//router.post('/build-eyelashes', function (req, res) {})
 //=======================================
 
-router.post('/eyelashes', function (req, res) {})
+//router.post('/eyelashes', function (req, res) {})
 
 // ================================================================
 
@@ -103,7 +113,40 @@ router.get('/brows', function (req, res) {
   // ↑↑ сюди вводимо JSON дані
 })
 
-router.post('/brows', function (req, res) {})
+router.get('/base-brows', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('base-brows', {
+    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
+    style: 'base-brows',
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/spa-brows', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('spa-brows', {
+    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
+    style: 'spa-brows',
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/coloring-brows', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  // ↙️ cюди вводимо назву файлу з сontainer
+  res.render('coloring-brows', {
+    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
+    style: 'coloring-brows',
+  })
+  // ↑↑ сюди вводимо JSON дані
+})
+
+//router.post('/brows', function (req, res) {})
 
 // Підключаємо роутер до бек-енду
 module.exports = router

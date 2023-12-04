@@ -2,6 +2,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: #FADEDE;
 }
 
 .header {
@@ -185,8 +186,8 @@ body {
 }
 
 .form-img {
-  background-image: url("/img/screen.png");
-  background-color: #000;
+  background-image: url("/img/face1.png");
+  width: 100%;
 }
 
 .form-big {
@@ -233,7 +234,6 @@ em {
   height: 100vh;
   background-size: cover;
   background-image: url("/img/ресницы 1.png");
-  background-color: #000;
 }
 .service__eye {
   font-size: 36px;
@@ -245,10 +245,9 @@ em {
 .service__title__brows {
   display: flex;
   justify-content: center;
-  width: 100%;
   height: 100vh;
-  background-image: url("/img/раздел брови.png");
-  background-color: #000;
+  background-size: cover;
+  background-image: url("/img/brows 1.png");
 }
 .service__brows {
   font-size: 36px;

@@ -124,17 +124,6 @@ router.get('/base-brows', function (req, res) {
   // ↑↑ сюди вводимо JSON дані
 })
 
-router.get('/spa-brows', function (req, res) {
-  // res.render генерує нам HTML сторінку
-
-  // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('spa-brows', {
-    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'spa-brows',
-  })
-  // ↑↑ сюди вводимо JSON дані
-})
-
 router.get('/coloring-brows', function (req, res) {
   // res.render генерує нам HTML сторінку
 
